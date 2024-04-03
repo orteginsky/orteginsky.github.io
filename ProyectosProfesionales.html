@@ -78,30 +78,60 @@
             </tr>
             <tr>
                 <td>Tramontina</td>
-                <td><a href="optimizacion_python">Optimización de Código en Python</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
+                <td><a href="#optimizacion_python">Optimización de Código en Python</a></td>
+                <td><a href="#eda">Analisis Exploratorio de Datos (EDA)</a></td>
+                <td><a href="#tramontina_sql">NA</a></td>
+                <td>
+                  <ul>
+                    <li><a href="#historico_tramontina">Historico</a></li>
+                    <li><a href="#analisis_stock">Analisis de Stock</a></li>
+                  </ul>
+                </td>
+                <td><a href="#combos">Formato para la creación de combos</a></td>
+                <td>
+                  <ul>    
+                    <li><a href="#pp_comprobacion">Comprobación de Proformas</a></li>
+                    <li><a href="#historico_excel">Historico de Ventas</a></td></li>
+                  </ul>
+                <td><a href="#">NA</a></td>
             </tr>
             <tr>
                 <td>Distribuidora Balban</td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
-                <td><a href="#">Enlace</a></td>
+                <td><a href="#extraccion_facturas">Extracción Automatizada de Facturas</a></td>
+                <td><a href="#analisis_ventas">Análisis Integral de Ventas</a></td>
+                <td><a href="#postgresql_bbr">Creación de una DB en postgresql</a></td>
+                <td><a href="#power_bi_bbr">Historico</a></td>
+                <td><a href="#sistema_inventario">Sistema de Gestión de Ventas y Inventario</a></td>
+                <td><a href="#registros">Registros</a></td>
+                <td><a href="#servidor">Creación del Servidor</a></td>
             </tr>
         </table>
         <h3>Python</h3>
-        <h4 id="optimizacion_python"></h4>
-        <p>Durante mi experiencia laboral, me enfoqué en mejorar la eficiencia y funcionalidad del programa desarrollado para la creación de las predicciones con el cual se creaba el forecast el cual fue creado por la persona anteriormente en mi puesto (Carlos Yebgeni Pierdan), el cual usaba modelos de machine learning (principalmente deribados del arbol de decisiones) para realizar las predicciones de la demanda de los diferentes productos (los cuales en 2023 se vendieron aproximadamente 3800 diferentes productos) lo cual era una tarea complicada debido a la variedad de productos</p>
-        <p>El programa consiste en una vez filtrado la información (la cual es el historico de ventas que indica cuantas unidades de los diferentes productos se vendieron) esta misma introduce al programa en la cual se le da el nombre de "historico" y en este mismo se escribe el id del producto al cual se le va a realizar la predicción, la información pasa por un proceso de limpieza en para agrupar la información por mes y año.</p>
-        <p>Después se filtra </p>
+        <h4 id="optimizacion_python">Optimización del Programa de Predicciones en Python</h4>
+        <p>Durante mi experiencia laboral, me enfoqué en mejorar la eficiencia y funcionalidad del programa utilizado para la creación de predicciones de demanda. Este programa, originalmente desarrollado por mi predecesor en el cargo (Carlos Yebgeni Pierdan), empleaba modelos de machine learning, principalmente derivados del árbol de decisiones, para prever la demanda de una amplia gama de productos. Este era un desafío significativo debido a la diversidad de productos vendidos, que ascendió a aproximadamente 3800 diferentes productos en 2023.</p>
+        <p>El programa opera filtrando y limpiando la información histórica de ventas, organizándola por mes y año, y gestionando valores nulos. Posteriormente, se aplica un filtro lógico para determinar si el producto tiene al menos un año de registro de ventas, antes de proceder con la predicción.</p>
+        <p>Una vez pasado este filtro, se definen los meses de prueba para validar los modelos de machine learning y la cantidad de meses futuros para la predicción. Se calculan los retrasos o lags de la serie de tiempo para evaluar la autocorrelación y se selecciona el mejor retraso, generalmente dentro de un rango de seis meses.</p>
+        <p>Se crean listas de funciones por modelo de machine learning, cada una aplicando una transformación diferente a los datos para mejorar las predicciones. Estas funciones se aplican a los datos y se comparan entre sí mediante su error promedio, obtenido de los meses de prueba.</p>
+        <p>Finalmente, se selecciona la mejor función y se implementa, junto con la técnica de bootstraping para mejorar los intervalos de confianza. Se genera una gráfica que muestra la serie de tiempo del producto, la estacionalidad y los puntos atípicos de la serie, proporcionando una herramienta integral para la toma de decisiones en la gestión de inventarios.</p>
+        <p>El programa originalmente requería entre 13 y 16 minutos para ejecutar los modelos, seguidos de una tarea adicional de copiar la información a un documento de Excel. Durante mi evaluación, identifiqué varias deficiencias en el programa, siendo la principal el hecho de que algunas funciones se ejecutaban hasta tres veces, lo cual consumía la mayor parte del tiempo de ejecución. Para abordar este problema, optimicé el código reciclando la información para diferentes pasos y creando funciones adicionales para mejorar la legibilidad y eficiencia del programa.</p>
+        <p>Además, dado el gran número de productos que debían procesarse, agregué una función que extraía un archivo CSV con una lista de IDs de productos. Esto permitía ejecutar los modelos para múltiples productos simultáneamente, con la información descargada en una carpeta para su análisis posterior o para compartir según fuera necesario.</p>
+        <p>Estas mejoras redujeron significativamente el tiempo de ejecución del programa a aproximadamente 3 minutos por producto. Como resultado, pude obtener las predicciones de más de 140 productos en un solo día, lo que anteriormente habría requerido una semana de trabajo dedicado exclusivamente a esa tarea. Esta optimización me permitió gestionar mis responsabilidades de manera más eficaz, equivaliendo a dos semanas de trabajo en un solo día.</p>
+        <h4 id="eda">Analisis Exploratorio de Datos (EDA)</h4>
+        <h4 id="tramontina_sql">SQL</h4>
+        <p></p>
+        <h4 id="historico_tramontina">Historico</h4>
+        <h4 id="analisis_stock">Análisis de Stock</h4>
+        <h4 id="combos">Formato para la creación de combos</h4>
+        <h4 id="pp_comprobacion">Comprobación de Proformas</h4>
+        <h4 id="historico_excel">Historico de Ventas</h4>
+        <h4 id="extraccion_facturas">Extracción Automatizada de Facturas</h4>
+        <h4 id="analisis_ventas">Análisis Integral de Ventas</h4>
+        <h4 id="postgresql_bbr">Creación de una DB en postgresql</h4>
+        <h4 id="power_bi_bbr">Historico</h4>
+        <h4 id="sistema_inventario">Sistema de Gestión de Ventas y Inventario</h4>
+        <h4 id="registros">Registros</h4>
+        <h4 id="servidor">Creación de Servidor</h4>
+        
 		</div>
 	</body>    		
 </html>

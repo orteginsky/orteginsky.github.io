@@ -1,0 +1,4 @@
+https://fonts.google.com/specimen/Raleway
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  Paso 2: Pega ese <link> en el <head> de tu archivo HTML

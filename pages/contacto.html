@@ -1,17 +1,86 @@
 <!DOCTYPE html>
-
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CV Ortega</title>
-    	<link rel="stylesheet" href="/css/style.css">
-    	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-	</head>
-	
-	<body>
-    	<div id="menu-container"></div>
-		<script src="/js/loadMenu.js"></script>
-		<h1 class= "titulo_pagina">Ortega: Exhibición de Portafilo (CV)</h1>
-	</body>    		
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | CV Ortega</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .info-item i {
+      font-size: 1.5rem;
+      color: #555;
+    }
+
+    .info-item span {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        margin: 80px 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="menu-container"></div>
+  <script src="/js/loadMenu.js"></script>
+
+  <main class="contact-container">
+    <h1>Información de Contacto</h1>
+    <div class="contact-info">
+      <div class="info-item">
+        📧 <span><strong>Email:</strong> luisortegar99@gmail.com</span>
+      </div>
+      <div class="info-item">
+        📱 <span><strong>Teléfono:</strong> +52 55 7210 6799</span>
+      </div>
+      <div class="info-item">
+        🌐 <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/orteginsky" target="_blank">linkedin.com/in/orteginsky</a></span>
+      </div>
+      <div class="info-item">
+        🐱 <span><strong>GitHub:</strong> <a href="https://github.com/orteginsky" target="_blank">github.com/orteginsky</a></span>
+      </div>
+      <div class="info-item">
+        📍 <span><strong>Ubicación:</strong> CDMX, México</span>
+      </div>
+    </div>
+  </main>
+</body>
 </html>

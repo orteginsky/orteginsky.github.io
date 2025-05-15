@@ -1,22 +1,104 @@
 <!DOCTYPE html>
-
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CV Ortega</title>
-    	<link rel="stylesheet" href="/css/style.css">
-    	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-	</head>
-	
-	<body>
-		<div id="menu-container"></div>
-		<script src="/js/loadMenu.js"></script>
-		<h1 class= "titulo_pagina">Ortega: Exhibición de Portafilo (CV)</h1>
-	  	<div id="formacion_profesional" class="clase_pagina">
-			<h2 id="educacion">Educación y Formación Académica</h2>
-			<h2 id="perfil_profesional">Perfil Profesional y Trayectoria Educativa</h2>
-			<h2 id="desarrollo_profesional">Desarrollo Profesional y Crecimiento Académico</h2>
-		</div>
-	</body>    		
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formación Profesional | CV Ortega</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      margin-top: 100px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .item {
+      margin-bottom: 1rem;
+    }
+
+    .item h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .item p {
+      margin: 0.2rem 0 0.5rem;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu-container"></div>
+  <script src="/js/loadMenu.js"></script>
+
+  <main class="container">
+    <h1>Formación Profesional</h1>
+
+    <!-- Perfil Profesional -->
+    <section>
+      <h2>Perfil Profesional</h2>
+      <p>
+        Ingeniero Matemático con interés en la ciencia de datos, automatización y análisis estadístico. Experiencia en desarrollo de soluciones en Python y R, y en el uso de herramientas de visualización e informes automatizados.
+      </p>
+    </section>
+
+    <!-- Educación Formal -->
+    <section>
+      <h2>Educación</h2>
+      <div class="item">
+        <h3>Ingeniería Matemática</h3>
+        <p>Escuela Superior de Física y Matemáticas — 2018 - 2023</p>
+      </div>
+    </section>
+
+    <!-- Cursos y Certificaciones -->
+    <section>
+      <h2>Cursos y Certificaciones</h2>
+      <ul>
+        <li>Certificado en Python para Ciencia de Datos – IBM / Coursera</li>
+        <li>Estadística con R – DataCamp</li>
+        <li>Power BI – MicrosoftLearn</li>
+		<li>SQL – Harvard / edx</li>
+      </ul>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <ul>
+        <li>Lenguajes: Python, R, Java, HTML/CSS, JavaScript básico</li>
+        <li>Herramientas: Power BI, Pandas, Tidyverse, Matplotlib, Jupyter</li>
+        <li>Bases de Datos: postgresql, SQLite</li>
+		<li>Tecnologías: Linux, docker, git, aws</li>
+      </ul>
+    </section>
+
+    <!-- Idiomas -->
+    <section>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español (Nativo)</li>
+        <li>Inglés (Intermedio - B1/B2)</li>

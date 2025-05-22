@@ -11,6 +11,18 @@
 			body {
 			padding-top: 60px;
 			}
+			.fade-in {
+				opacity: 0;
+				transform: translateY(20px);
+				animation: fadeInUp 0.6s ease-out forwards;
+			}
+
+			@keyframes fadeInUp {
+				to {
+				opacity: 1;
+				transform: translateY(0);
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -20,7 +32,7 @@
 		<main class="container">
 		<h1 class="page-title">    </h1>
 		<div><h1 class="page-title">    </h1></div>
-		<h1 class="page-title">Ortega: Portafolio Profesional</h1>
+		<h1 class="page-title fade-in">Ortega: Portafolio Profesional</h1>
 
 		<section class="intro">
 			<h2>Sobre mí</h2>

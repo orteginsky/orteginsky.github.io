@@ -7,6 +7,20 @@
 		<title>CV Ortega</title>
     	<link rel="stylesheet" href="/css/style.css">
     	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<style>
+			.fade-in {
+				opacity: 0;
+				transform: translateY(20px);
+				animation: fadeInUp 0.6s ease-out forwards;
+			}
+
+			@keyframes fadeInUp {
+				to {
+				opacity: 1;
+				transform: translateY(0);
+				}
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -14,9 +28,9 @@
 		<script src="/js/loadMenu.js"></script>
 		<h1 class= "titulo_pagina">Ortega: Exhibición de Portafilo (CV)</h1>
 	  	<div id="proyectos_personales" class="clase_pagina">
-			<h2 id="lista_proyectos">Explorando Proyectos Personales</h2>
-			<h2 id="innovaciones_experimentos">Innovaciones y Experimentos Independientes</h2>
-			<h2 id="creaciones">Desarrollos y Creaciones Fuera del Ámbito Laboral</h2>
+			<h2 id="lista_proyectos" class="fade-in">Explorando Proyectos Personales</h2>
+			<h2 id="innovaciones_experimentos" class="fade-in">Innovaciones y Experimentos Independientes</h2>
+			<h2 id="creaciones" class="fade-in">Desarrollos y Creaciones Fuera del Ámbito Laboral</h2>
 		</div>
 	</body>    		
 </html>
